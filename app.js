@@ -22,7 +22,7 @@ const indexRoutes = require('./routes/index');
 
 // DATABASE
 console.log(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI ||'mongod://localhost/yelp_deploy_03' , {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
