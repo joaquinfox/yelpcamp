@@ -17,9 +17,11 @@ const session = require('express-session');
 const commentRoutes = require('./routes/comments');
 const campgroundRoutes = require('./routes/campgrounds');
 const indexRoutes = require('./routes/index');
+const MONGODB_URI =
+  'mongodb://heroku_xxvhrnx5:pg7pk2982vdj2am62m56gt06e3@ds223738.mlab.com:23738/heroku_xxvhrnx5';
 
 // DATABASE
-mongoose.connect('mongodb://localhost/yelp_10', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
@@ -63,6 +65,6 @@ app.use(commentRoutes);
 app.get('/', (req, res) => {
   res.render('landing');
 });
-app.listen(3000, function () {
+app.listen(process.env.PORT || 5000, function () {
   console.log('server up');
 });
