@@ -9,7 +9,6 @@ const Camp = require('./models/campground');
 const Comment = require('./models/comment');
 const User = require('./models/user');
 const seedDB = require('./seeds');
-
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const LocalStrategy = require('passport-local');
@@ -17,11 +16,9 @@ const session = require('express-session');
 const commentRoutes = require('./routes/comments');
 const campgroundRoutes = require('./routes/campgrounds');
 const indexRoutes = require('./routes/index');
-// const MONGODB_URI =
-// 'mongodb://heroku_xxvhrnx5:pg7pk2982vdj2am62m56gt06e3@ds223738.mlab.com:23738/heroku_xxvhrnx5';
+
 
 // DATABASE
-console.log(process.env.MONGODB_URI);
 mongoose.connect(process.env.MONGODB_URI ||'mongod://localhost/yelp_deploy_03' , {
   useNewUrlParser: true,
   useUnifiedTopology: true,
