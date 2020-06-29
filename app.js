@@ -19,13 +19,13 @@ const indexRoutes = require('./routes/index');
 
 
 // DATABASE
-mongoose.connect(process.env.MONGODB_URI ||'mongod://localhost/yelp_deploy_03' , {
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/yelp_deploy_03' , {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
 });
 
-// seedDB();
+seedDB();
 
 // DEPENDENCIES
 app.set('view engine', 'ejs');
