@@ -46,7 +46,7 @@
             <span id="comment_time_ago">... ten days ago</span>
           </p>
           <p class=""><%= comment.text %></p>
-          <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
+          <% if(currentUser && currentUser._id.equals(comment.author.id)){ %>
 
           <a
             class="ui button small orange"
@@ -64,7 +64,7 @@
         </div>
         <% }) %>
       </div>
-      <% if(currentUser && camp.author.id.equals(currentUser._id)){ %>
+      <% if(currentUser && currentUser._id.equals(camp.author.id)){ %>
       <div id="comment_buttons">
         <a
           class="ui green button btn_show"

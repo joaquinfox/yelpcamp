@@ -55,7 +55,11 @@ router.get('/:id', (req, res) => {
   Camp.findById(targetId)
     .populate('comments')
     .exec(function (err, foundCamp) {
-      res.render('campgrounds/show', { camp: foundCamp });
+      if (err) {
+        console.log('ERROR', err.message || err);
+      } else {
+        res.render('campgrounds/show', { camp: foundCamp });
+      }
     });
 });
 
