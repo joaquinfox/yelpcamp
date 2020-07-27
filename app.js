@@ -64,5 +64,5 @@ app.get('/', (req, res) => {
   res.render('landing');
 });
 app.listen(process.env.PORT || 5000, function () {
-  console.log('server up');
+  console.log('listening on 5000');
 });
