@@ -2,22 +2,18 @@
 <div class="text container">
   <h1 class="header">YelpCamp</h1>
   <form class="form" action="/campgrounds" method="POST">
-    <div class="field">
-      <label for="">Name</label>
-      <input type="text" name="camp[name]" />
-    </div>
-    <div class="field">
-      <label for="">Price</label>
-      <input type="number" name="camp[price]" min="0.01" step=".01" />
-    </div>
-    <div class="field">
-      <label for="">Picture</label>
-      <input type="text" name="camp[image]" />
-    </div>
-    <div class="field">
-      <label for="">Descripton</label>
-      <textarea type="text" name="camp[description]"></textarea>
-    </div>
+    <label for="">Name</label>
+    <input type="text" name="camp[name]" />
+
+    <label for="">Price</label>
+    <input type="number" name="camp[price]" min="0.01" step=".01" />
+
+    <label for="">Picture</label>
+    <input type="text" name="camp[image]" />
+
+    <label for="">Description</label>
+    <textarea type="text" name="camp[description]"></textarea>
+
     <input class="button" type="submit" />
   </form>
 </div>

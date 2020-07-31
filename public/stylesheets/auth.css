@@ -3,17 +3,20 @@
   flex-direction: column;
   border: 1px solid black;
   margin: 0 30%;
-  padding: 2%;
+  padding: 3%;
 }
-.form .field {
-  margin: auto;
+
+label {
+  align-items: flex-start;
+  padding: 5% 0 0 0;
+}
+input {
   flex: 3;
-  padding: 1%;
 }
 .form .button {
   width: 5rem;
   flex: 1;
   padding: 1%;
   text-transform: uppercase;
-  margin: auto;
+  margin: 5% auto;
 }
