@@ -1,16 +1,16 @@
 <%- include('../partials/header') %>
-<div class="ui text container">
-  <h1 class="ui header">YelpCamp</h1>
-  <div class="ui items">
+<div class="text container">
+  <h1 class="header">YelpCamp</h1>
+  <div class="items">
     <% campgrounds.forEach((camp)=>{ %>
     <div class="item">
-      <div class="ui image small">
+      <div class="image small">
         <img src="<%= camp.image %>" alt="" />
       </div>
       <div class="content">
-        <div class="ui header"><%- camp.name %></div>
+        <div class="header"><%- camp.name %></div>
         <div class="description"><%- camp.description.substring(0,100) %></div>
-        <a class="ui button green" href="/campgrounds/<%= camp._id %>"
+        <a class="button read" href="/campgrounds/<%= camp._id %>"
           >Read more ...</a
         >
       </div>

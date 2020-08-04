@@ -29,7 +29,22 @@ body {
 .item {
   font-size: 1.5rem;
   letter-spacing: 3px;
+  padding: 3%;
+  text-decoration: none;
+}
+.item .header {
+  font-weight: bold;
+}
+.item .description {
+  padding: 2%;
+}
+.button {
+  background-color: green;
+  font-size: small;
   padding: 1%;
+  border-radius: 8%;
+  color: white;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
