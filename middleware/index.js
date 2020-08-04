@@ -7,7 +7,7 @@ middlewareObj.isLoggedIn = function (req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-  req.flash('error', 'Please login, bubba boo.');
+  req.flash('error', 'Please login.');
   res.redirect('/login');
 };
 middlewareObj.checkCampOwnership = function (req, res, next) {

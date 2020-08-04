@@ -19,7 +19,7 @@ const data = [
   },
   {
     author: { username: 'Jelly Bean' },
-    name: 'Camp PoisonIvy',
+    name: 'Camp Stronghold',
     image:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.outdoorproject.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fodp_header_adaptive%2Fpublic%2Ffeatures%2Fdsc_0389_0.jpg%3Fitok%3DWIqD9nle&f=1&nofb=1',
     description:

@@ -47,6 +47,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+.form input {
+  padding: 2%;
+}
 
 #mainContainer {
   margin: 0 20%;
@@ -87,5 +90,6 @@ img {
   #navRight {
     display: flex;
     flex-direction: column;
+    font-size: 70%;
   }
 }

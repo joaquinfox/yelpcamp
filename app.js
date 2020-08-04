@@ -61,7 +61,7 @@ app.use('/campgrounds', campgroundRoutes);
 app.use(commentRoutes);
 
 app.get('/', (req, res) => {
-  res.render('landing');
+  res.redirect('/campgrounds');
 });
 app.listen(process.env.PORT || 5000, function () {
   console.log('listening on 5000');

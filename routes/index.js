@@ -3,9 +3,6 @@ const router = express.Router();
 const passport = require('passport');
 const User = require('../models/user');
 // AUTHORIZATION ROUTES
-router.get('/', (req, res) => {
-  res.render('landing');
-});
 
 router.get('/register', (req, res) => {
   res.render('auth/register');
@@ -43,7 +40,7 @@ router.post(
 
 router.get('/logout', (req, res) => {
   req.logout();
-  req.flash('success', 'Way to go, Sparky');
+  req.flash('success', 'You are logged out.');
   res.redirect('/');
 });
 
